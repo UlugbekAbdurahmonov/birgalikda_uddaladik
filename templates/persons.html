@@ -1,18 +1,10 @@
 {% extend 'base.html' %}
 
 {% block content %}
-        {for student in students %}
+        {% for student in students %}
             <h1><a href="{% url '"></a></h1>
-
-
-<!--{% extends 'base.html' %}-->
-
-<!--{% block content %}-->
-<!--    {% for student in students %}-->
-<!--        <h1><a href="{% url 'talaba_detail' student.id %}">{{ student.fullname }}</a></h1>-->
-<!--    {% endfor %}-->
-<!--{% endblock content %}-->
-
+        {% endfor %}
+{% endblock content %}
 
 
 
