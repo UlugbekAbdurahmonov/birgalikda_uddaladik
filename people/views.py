@@ -4,9 +4,9 @@ from .models import Person
 
 # Create your views here.
 
-def personlar_royxati():
+def personlar_royxati(request):
     persons = Person.objects.all()
     context = {
-        'persons':persons
+        'persons': persons
     }
     return render(request, 'persons.html', context)
